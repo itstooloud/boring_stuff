@@ -1,5 +1,5 @@
 print('Hello World!')
-print('what is your fucking name?')
+print('what is your name?')
 myName = input()
 print('your name is ' + myName)
 print('The length of your name is ' + str(len(myName)))
