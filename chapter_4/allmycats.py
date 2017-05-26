@@ -75,8 +75,8 @@ print('reverse sort: ' + str(spam))
 # sorting with a key
 
 spam = ['a','A','Z','z']
-spam = spam.sort(key=str.lower)
-print(spam)
+print(str(spam.sort(key=str.lower)))
+
 
 
 
