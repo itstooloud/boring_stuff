@@ -32,8 +32,12 @@ while i < len(tableData):
     i +=1
 
 
+# grab the max width from the table of max widths
+max = 0
 for each in maximumWidth:
-    print(each)
+    if each > max:
+        max = each
+        
 # so now maximumWidth[i] is the maximum width in each group
 
 #now print out the table so that it's justified etc
@@ -43,8 +47,9 @@ x = 0
 while x < len(tableData):
     y = 0
     while y < len(tableData[x]):
-        print('   ' + str(tableData[x][y]).rjust(maximumWidth[x] + 2, "-"))
+        print('   ' + str(tableData[x][y]).rjust(max),end='') #justify by the max
         y +=1
+    print('')
     x+= 1
 
 
