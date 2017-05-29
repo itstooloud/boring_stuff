@@ -15,7 +15,8 @@ def displayInventory(inventory):
 
 ##displayInventory(stuff)
 
-
+# adds inventory from a list into a dictionary, then prints
+# updated inventory counts using the function above
 
 def addtoInventory(inventory, addedItems):
 
